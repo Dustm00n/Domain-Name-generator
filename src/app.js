@@ -1,27 +1,14 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our", "this"];
+let adj = ["great", "big", "Gerbo"];
+let noun = ["jogger", "racoon", "hello"];
+let domain = [".com", ".net", ".us", ".io"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-import { WatchIgnorePlugin } from "webpack";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
-
-let pronoun = ["the", "our"];
-let adj = ["great", "big"];
-let noun = ["jogger", "racoon"];
-let dominio = [".com", ".net", ".us", ".io"];
-
-
-
-let pronounindx = Math.floor(Math.random() * pronoun.length);
-let adjindx = Math.floor(Math.random() * adj.length);
-let nounindx = Math.floor(Math.random() * noun.length);
-let dominioindx = Math.floor(Math.random() * dominio.length);
-
-return pronoun[pronounindx] +" "+ adj[adjindx] +" "+ noun[nounindx] +" "+dominio[dominioindx];
-};
+for (let a = 0; a < pronoun.length; a++) {
+  for (let b = 0; b < adj.length; b++) {
+    for (let c = 0; c < noun.length; c++) {
+      for (let d = 0; d < domain.length; d++) {
+        console.log(pronoun[a] + adj[b] + noum[c] + domain[d]);
+      }
+    }
+  }
+}
